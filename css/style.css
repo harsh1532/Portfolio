@@ -1,3 +1,4 @@
+
 /*
 0 - 600px:      Phone
 600 - 900px:    Tablet portrait
@@ -165,7 +166,7 @@ textarea {
     padding: calc(1.5rem - 2px) calc(5rem - 2px); }
 
 .sec-pad {
-  padding: 12rem 0; }
+  padding: 4rem 0; }
   @media only screen and (max-width: 56.25em) {
     .sec-pad {
       padding: 8rem 0; } }
@@ -185,7 +186,10 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background-image: url("https://images.unsplash.com/photo-1437419764061-2473afe69fc2?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 77%);
+  background-attachment: fixed;
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -247,7 +251,9 @@ textarea {
     text-align: center; }
 
 .about {
-  background: #fafafa; }
+  background: #fafafa; 
+  padding-top: 10rem;
+}
   .about__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -375,9 +381,14 @@ textarea {
           font-size: 1.7rem; } }
 
 .contact {
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background-image: url("https://images.unsplash.com/photo-1488998427799-e3362cec87c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
-  background-position: center; }
+  box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 77%);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; 
+  padding-top: 12rem;
+}
   .contact__form-container {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: white;
@@ -722,10 +733,10 @@ textarea {
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
     font-size: 1.6rem;
-    background: rgba(181, 120, 120, 0.292);
+    background: #0062b9;
     border-radius: 5px;
     font-weight: 600;
-    color: #777; }
+    color: #fff; }
 
 .mouse {
   width: 25px;
