@@ -194,7 +194,12 @@ textarea {
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
-  position: relative; }
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
   @media only screen and (max-width: 37.5em) {
     .home-hero {
       height: unset;
@@ -231,10 +236,10 @@ textarea {
   .home-hero__social-icon {
     width: 100%; }
   .home-hero__content {
-    position: absolute;
+    /*position: absolute;*/
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+   /* transform: translate(-50%, -50%);*/
     max-width: 90rem;
     width: 92%; }
     @media only screen and (max-width: 37.5em) {
@@ -758,6 +763,76 @@ textarea {
     opacity: 1;
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
+
+
+
+    .profile-card{
+      max-width: 500px;
+      width: 100%;
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 5px 10px rbga(0,0,0,0.1);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+  
+  }
+  
+  
+  .image{
+      position: relative;
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      background-color:  #FFE8D6;
+      padding: 2px;
+      margin: 10px;
+      
+  }
+  
+  .image .profile-img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid  white;
+  }
+  .profile-card .text-data{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .text-data .name{
+      font-size: 22px;
+      font-weight:500 ;
+  }
+  .text-data .hobby{
+      font-size: 22px;
+      font-weight:500 ;
+  }
+  .media-buttons{
+      display: flex;
+      align-items: right;
+      margin-top: 10px;
+      
+  }
+  .link{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 34px;
+      width: 34px;
+      border-radius: 50%;
+      margin: 0 8px;
+      background-color: #FFE8D6;
+      text-decoration: none;
+      color: #fff;
+  }
+
 
 @keyframes wheel {
   to {
